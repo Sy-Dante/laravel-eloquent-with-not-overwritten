@@ -1,0 +1,43 @@
+{
+    "name": "sydante/laravel-eloquent-with-not-overwritten",
+    "description": "Add a method to Eloquent that does not overwrite the established relationship when relating 'with'.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "database",
+        "eloquent",
+        "with"
+    ],
+    "homepage": "https://github.com/Sy-Dante/laravel-eloquent-with-not-overwritten",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sy-Dante",
+            "email": "sy40520@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "ext-json": "*",
+        "laravel/framework": ">=8.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^8.5.19|^9.5.8",
+        "mockery/mockery": "^1.4.4",
+        "orchestra/testbench": "^6.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sydante\\LaravelEloquentWithNotOverwritten\\": "src",
+            "Sydante\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sydante\\LaravelEloquentWithNotOverwritten\\ServiceProvider"
+            ]
+        }
+    }
+}
