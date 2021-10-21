@@ -1,0 +1,16 @@
+version: 7.4
+
+preset: laravel
+
+tab-width: 4
+
+use-tabs: false
+
+finder:
+  exclude:
+    - "tests"
+  name:
+    - "*.php"
+  not-name:
+    - "*Stub.php"
+    - "_ide_helper.php"
