@@ -7,14 +7,12 @@ use Illuminate\Database\Eloquent\Builder;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
-
     public function boot(): void
     {
         Builder::macro(
             'withNotOverwritten',
             function ($relations, $callback = null) {
                 /** @var Builder $this */
-
                 if ($callback instanceof Closure) {
                     $prepareEagerLoads = $this->parseWithRelations(
                         [$relations => $callback]
@@ -40,5 +38,4 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             }
         );
     }
-
 }
